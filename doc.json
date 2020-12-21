@@ -1,0 +1,34 @@
+{
+  "name": "rolechat",
+  "description": "Use /rc message to send hidden messages to members of a specific role",
+  "author": "cake",
+  "config": {
+    "role": {
+      "description": "Rolename that has access to the chat",
+      "type": "string",
+      "default": "Admin"
+    },
+    "command": {
+      "description": "Change the command name (ac becomes /ac, rc becomes /rc)",
+      "type": "string",
+      "default": "rc"
+    },
+    "prefix": {
+      "description": "Characters that appear before messages (* will become '* cake: Hello')",
+      "type": "string",
+      "default": "*"
+    }
+  },
+  "commands": [
+    {
+      "name": "/rc",
+      "description": "Send a message to all members of the configured role",
+      "example": "/rc message",
+      "args": [{
+        "name": "message",
+        "description": "Chat message to be sent",
+        "required": true
+      }]
+    }
+  ]
+}
