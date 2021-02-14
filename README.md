@@ -6,6 +6,10 @@ Send chat messages to your admins or moderators.
 
 ## Install
 
+Easy: `omegga install gh:Meshiest/rolechat`
+
+Manual:
+
 * `git clone https://github.com/meshiest/omegga-rolechat rolechat` in `plugins` directory
 
 # Screenshot
